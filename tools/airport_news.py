@@ -33,17 +33,17 @@ def airport_news(airport_code: str) -> dict:
         "COK": "Cochin International Airport Kochi",
         "AMD": "Sardar Vallabhbhai Patel International Airport Ahmedabad",
         "PNQ": "Pune International Airport",
-        "GOI": "Manohar International Airport Goa",
         "JAI": "Jaipur International Airport",
         "LKO": "Chaudhary Charan Singh International Airport Lucknow",
         "IXC": "Chandigarh International Airport",
         "SXR": "Sheikh ul-Alam International Airport Srinagar",
         "PAT": "Jay Prakash Narayan International Airport Patna",
         "GAU": "Lokpriya Gopinath Bordoloi International Airport Guwahati",
-        "VNS": "Lal Bahadur Shastri International Airport Varanasi",
         "TRV": "Trivandrum International Airport",
         "IXB": "Bagdogra Airport",
         "BBI": "Biju Patnaik International Airport Bhubaneswar",
+        "GOX": "Manohar International Airport Goa",
+        "VNS": "Lal Bahadur Shastri International Airport Varanasi",
     }
 
     airport_name = airport_names.get(airport_code)
