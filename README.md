@@ -145,39 +145,6 @@ flowchart TB
 
 ---
 
-# 🔄 Request Flow
-
-```mermaid
-sequenceDiagram
-    participant U as User
-    participant S as Streamlit
-    participant F as FastAPI
-    participant A as LangChain Agent
-    participant L as Groq LLM
-    participant T as External Tools
-    participant R as Response
-
-    U->>S: Ask airport question
-    S->>F: POST /ask
-    F->>A: Send user query
-
-    A->>L: Determine required tools
-    L-->>A: Tool selection
-
-    A->>T: Execute required tools
-    T-->>A: Return information
-
-    A->>L: Synthesize tool results
-    L-->>A: Final response
-
-    A-->>F: Answer + sources
-    F-->>S: JSON response
-    S-->>R: Display intelligence
-    R-->>U: Airport information
-```
-
----
-
 # ✈️ Features
 
 ## 1. Airport Intelligence Overview
