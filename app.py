@@ -117,7 +117,7 @@ with st.sidebar:
     st.image(
         "https://images.unsplash.com/photo-1713182568612-58dd29b515b7"
         "?fm=jpg&ixlib=rb-4.1.0&q=80&w=1200",
-        use_container_width=True,
+        width='stretch',
     )
 
     st.divider()
@@ -229,7 +229,7 @@ query = st.text_area(
 if st.button(
     "🔎 Ask Agent",
     type="primary",
-    use_container_width=True,
+    width='stretch',
 ):
     if not query.strip():
         st.warning("Please enter a question.")
